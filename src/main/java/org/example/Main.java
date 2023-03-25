@@ -13,8 +13,8 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "E:\\Projects\\TESTING\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.rba.hr/");
-        WebElement kursnaLista = driver.findElement(By.linkText("Kursna lista"));
-        kursnaLista.click();
+        WebElement tecajnaLista = driver.findElement(By.linkText("Tečajni kalkulator"));
+        tecajnaLista.click();
         WebElement tecajniKalkulator = driver.findElement(By.xpath("//a[text()='Tečajni kalkulator']"));
         tecajniKalkulator.click();
         WebElement kupnjaGBP = driver.findElement(By.xpath("//label[text()='GBP']/following-sibling::input"));
